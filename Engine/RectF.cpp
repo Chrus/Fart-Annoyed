@@ -1,4 +1,5 @@
 #include "RectF.h"
+#include "assert.h"
 
 /// <summary>
 /// </summary>
@@ -35,4 +36,18 @@ bool RectF::overlaps(const RectF rect) const
 {
 	return right > rect.left && left < rect.right
 		&& bottom > rect.top && top < rect.bottom;
+}
+
+float RectF::width() const
+{
+	assert(right < left);
+
+	return right - left;
+}
+
+float RectF::height() const
+{
+	assert(bottom < top);
+
+	return bottom - top;
 }

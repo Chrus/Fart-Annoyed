@@ -14,5 +14,7 @@ public:
 	float right;
 
 	bool overlaps(const RectF rect) const;
+	float width() const;
+	float height() const;
 };
 
