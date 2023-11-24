@@ -49,6 +49,8 @@ Game::Game( MainWindow& wnd )
 		}
 	}
 	ResetBall();
+
+	//github test
 }
 
 void Game::Go()
