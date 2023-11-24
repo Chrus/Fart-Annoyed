@@ -38,6 +38,7 @@ void Game::Go()
 
 void Game::UpdateModel()
 {
+	//11/24 test
 }
 
 void Game::ComposeFrame()
