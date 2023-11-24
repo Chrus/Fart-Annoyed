@@ -40,14 +40,14 @@ bool RectF::overlaps(const RectF rect) const
 
 float RectF::width() const
 {
-	assert(right < left);
+	assert(right > left);
 
 	return right - left;
 }
 
 float RectF::height() const
 {
-	assert(bottom < top);
+	assert(bottom > top);
 
 	return bottom - top;
 }
