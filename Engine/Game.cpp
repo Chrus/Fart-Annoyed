@@ -49,8 +49,6 @@ Game::Game( MainWindow& wnd )
 		}
 	}
 	ResetBall();
-
-	//github test
 }
 
 void Game::Go()
@@ -69,6 +67,9 @@ void Game::Go()
 
 void Game::UpdateModel( float dt )
 {
+	if (++ffs > 100000)
+		ffs = 0;
+
 	if( gameState == 1 )
 	{
 		pad.Update( wnd.kbd,dt );

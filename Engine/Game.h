@@ -78,4 +78,6 @@ private:
 	Sound soundFart;
 	Sound soundReady;
 	/********************************/
+
+	int ffs = 0;
 };
